@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="topnav">
+            <nav>
+                <a href="index.html">Google Search</a>
+            </nav>
+        </header>
+        <main class="advanced-page">
+            <section class="advanced-card">
+                <h1>Advanced Search</h1>
+                <form class="advanced-form" action="https://www.google.com/search" method="get">
+                    <div class="field-row">
+                        <label for="all">All these words:</label>
+                        <input id="all" name="as_q" type="text" autocomplete="off">
+                    </div>
+                    <div class="field-row">
+                        <label for="exact">This exact word or phrase:</label>
+                        <input id="exact" name="as_epq" type="text" autocomplete="off">
+                    </div>
+                    <div class="field-row">
+                        <label for="any">Any of these words:</label>
+                        <input id="any" name="as_oq" type="text" autocomplete="off">
+                    </div>
+                    <div class="field-row">
+                        <label for="none">None of these words:</label>
+                        <input id="none" name="as_eq" type="text" autocomplete="off">
+                    </div>
+                    <div class="advanced-actions">
+                        <input class="advanced-button" type="submit" value="Advanced Search">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
