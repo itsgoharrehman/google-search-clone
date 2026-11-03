@@ -1,0 +1,16 @@
+name: Feature Request
+description: Propose an accessibility enhancement or layout addition.
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an improvement for the Google search frontend clone.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Proposed Enhancement
+      description: Describe the visual or structural improvement.
+    validations:
+      required: true
