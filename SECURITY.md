@@ -2,22 +2,31 @@
 
 ## Supported Versions
 
-| Version | Supported |
-|---|---|
-| Default Branch (main) | Yes |
+| Version | Supported | Security Maintenance |
+| :--- | :--- | :--- |
+| Default Branch (main) | Yes | Active maintenance |
 
-## Reporting a Vulnerability
+---
 
-We take the security of this repository and our software seriously. If you believe you have identified a vulnerability, security flaw, or credential exposure, please report it immediately through private disclosure channels.
+## Vulnerability Disclosure Protocol
+
+If you identify a security issue, improper external redirect, or header manipulation defect in this repository, please disclose it privately:
 
 * **Security Contact**: goharrehmanfsd260@gmail.com
-* **Maintainer**: Gohar Rehman (@itsgoharrehman)
+* **Repository Maintainer**: Gohar Rehman (@itsgoharrehman)
+* **Response SLA**: Acknowledgment within 48 hours; assessment within 5 business days.
 
-### Vulnerability Report Details
-When reporting a vulnerability, please provide:
-* A detailed description of the issue and potential security impact.
-* Exact step-by-step reproduction instructions or a minimal proof-of-concept.
-* Specific affected files, functions, or endpoints.
+---
 
-### Responsible Disclosure
-Please do not open public GitHub issues or public pull requests detailing undisclosed vulnerabilities. Reports will be acknowledged within 48 hours and investigated promptly.
+## Security Invariants
+
+### 1. Form Action Destination Invariants
+* All HTML forms must submit queries strictly via HTTPS to official Google endpoints (`https://google.com/search` or `https://www.google.com/search`).
+* Forms must never forward user queries, keystrokes, or search terms to intermediate proxy servers, telemetry endpoints, or third-party loggers.
+
+### 2. Zero Client-Side Scripting Policy
+* This repository is deliberately engineered with zero client-side JavaScript.
+* No inline `<script>` tags, external JavaScript libraries, or dynamic script injections are permitted. This completely eliminates Cross-Site Scripting (XSS) and client-side token harvesting vectors.
+
+### 3. Static Asset Security
+* All assets, stylesheets, and SVG graphics must be hosted locally or loaded via verified, secure CDNs.
