@@ -1,37 +1,37 @@
 # Contributing Guidelines
 
-Thank you for your interest in contributing. We welcome contributions that improve performance, resolve bugs, enhance documentation, or expand feature capabilities.
+Thank you for your interest in contributing to google-search-clone. We welcome contributions that improve CSS fidelity, responsive behavior across new device breakpoints, and accessibility standards.
+
+---
 
 ## Code of Conduct
 
-All contributors and participants are expected to adhere to the standards described in [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+All contributors and participants must adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## Getting Started
+---
 
-1. Fork the repository on GitHub.
-2. Clone your fork locally:
+## Architectural Principles
+
+1. **Strict Zero-JS Policy**: Do not introduce JavaScript files, client-side frameworks, or npm runtime dependencies. All functionality must be executed purely via semantic HTML5 forms and modern CSS3.
+2. **Pixel Fidelity**: Replicate Google's genuine spacing, hover transitions, focus rings, and typography as closely as possible.
+3. **Accessibility**: Form controls must maintain accessible labels, correct `aria-label` attributes, and clear keyboard focus states.
+4. **Target URL Safety**: Form actions must strictly target official Google search endpoints over HTTPS.
+
+---
+
+## Development Workflow
+
+1. Fork and clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/<your-username>/google-search-clone.git
+   cd google-search-clone
    ```
-3. Create a descriptive feature branch:
+
+2. Create a focused branch:
    ```bash
-   git checkout -b feature/your-feature-name
+   git checkout -b fix/advanced-search-mobile-alignment
    ```
 
-## Development Standards
+3. Verify changes across multiple viewport sizes and browsers (Chrome, Firefox, Safari, Edge).
 
-* **Clean Code**: Follow idiomatic patterns for the project language.
-* **Testing**: Ensure existing test suites pass and write new tests for added functionality.
-* **Documentation**: Update relevant README or API docs if altering functional behavior.
-* **Commit Messages**: Write concise, imperative commit messages (e.g. `feat: add request timeout handler`).
-
-## Submitting Pull Requests
-
-1. Rebase your branch against the latest `main` branch.
-2. Push changes to your fork.
-3. Open a Pull Request against `main` with a clear description of the problem solved and test results.
-
-## Reporting Bugs
-
-Please search existing issues before opening a new bug report. Use the provided bug report template to supply reproducible steps, system details, and expected outcomes.
+4. Submit a Pull Request targeting `main` and complete the pull request template checklist.
