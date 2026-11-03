@@ -1,0 +1,23 @@
+{
+  "name": "google-search-clone",
+  "version": "1.0.0",
+  "description": "Pixel-perfect frontend specification of Google Search, Image Search, and Advanced Search interfaces built with semantic HTML5 and responsive CSS3.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "css-grid",
+    "css3",
+    "flexbox",
+    "frontend",
+    "google-clone",
+    "html5",
+    "responsive-design",
+    "semantic-html"
+  ],
+  "author": "Gohar Rehman <goharrehmanfsd260@gmail.com> (https://github.com/itsgoharrehman)",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
